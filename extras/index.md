@@ -15,7 +15,7 @@ You can use this Wallpapers for your desktop. Please respect copyright, do not c
 
 ###Upper Carbon Valley
 
-
+{::options parse_block_html="false" /}
 
 <img src="{{ site.url }}/storage/upper_carbon_valley_01.png" style="height:auto;width:100%;">
 <div class="pure-g">
