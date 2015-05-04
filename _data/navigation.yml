@@ -1,13 +1,13 @@
 # Site navigation links
 
+- title: Downloads
+  url: /downloads/
+
 - title: About
   url: /about/
 
-- title: Sample Posts
+- title: News
   url: /posts/
 
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: Made Mistakes
-  url: http://mademistakes.com
+- title: Extras
+  url: /extras/

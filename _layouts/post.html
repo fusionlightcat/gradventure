@@ -23,15 +23,12 @@
     {% endif %}
   alt="{{ page.title }} feature image">
   {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+    <span class="image-credit">{{ page.image.credit }}</span>
   {% endif %}
   </div><!-- /.image-wrap -->
 {% endif %}
 
-<div id="main" role="main">
-  <div class="article-author-side">
-    {% include _author-bio.html %}
-  </div>
+<div id="main" role="main" style="padding-left: 20%;"> 
   <article class="post">
     <div class="headline-wrap">
       {% if page.link %}
@@ -43,10 +40,6 @@
     <div class="article-wrap">
       {{ content }}
       <hr />
-      <footer role="contentinfo">
-        {% if page.share != false %}{% include _social-share.html %}{% endif %}
-        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %}.</p>
-      </footer>
     </div><!-- /.article-wrap -->
   {% if site.owner.disqus-shortname and page.comments == true %}
     <section id="disqus_thread"></section><!-- /#disqus_thread -->
